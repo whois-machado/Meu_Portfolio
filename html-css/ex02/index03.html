@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #121212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: #1e1e1e;
+      width: 100%;
+      height: 60%;
+      display: flex; /* transforma os filhos em flexíveis */
+      justify-content: space-around; /* espaço entre os itens */
+      align-items: center; /* centraliza verticalmente */
+      border: 2px dashed #555;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #ff00cc;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box" style="background:#0099ff;"></div>
+    <div class="box" style="background:#00ffcc;"></div>
+  </div>
+
+</body>
+</html>
